@@ -1,1 +1,10 @@
 # Born2beroot
+
+- Download latest stable debian
+- Install it in a VM partitioning the disc accordinlgy
+
+boot 512 / 487
+encrypted
+root 3010 / 2.8
+swap 1024 / 976
+home 4026 / 3.8
