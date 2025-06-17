@@ -1,2 +1,2 @@
 apt update
-apt install -y ufw libpam-pwquality
+apt install -y ufw libpam-pwquality sudo
