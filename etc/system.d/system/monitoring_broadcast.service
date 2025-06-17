@@ -1,0 +1,6 @@
+[Unit]
+Description=Runs monitoring_broadcast.sh
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/libexec/monitoring_broadcast.sh
