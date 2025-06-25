@@ -1,6 +1,0 @@
-[Unit]
-Description=Activate monitoring_broadcast.timer after first login.
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash -c 'systemctl start monitoring_broadcast.timer && systemctl stop monitoring_trigger.path'

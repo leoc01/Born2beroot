@@ -1,8 +1,0 @@
-[Unit]
-Description=Watch for first user login.
-
-[Path]
-PathExistsGlob=/run/systemd/users/*
-
-[Install]
-WantedBy=multi-user.target

@@ -2,10 +2,10 @@
 Description=Runs monitoring_boradcast.service every 10 minutes after first login.
 
 [Timer]
-OnActiveSec=10min
+OnBootSec=10sec
 OnUnitActiveSec=10min
-AccuracySec=1s
-Persistent=true
+AccuracySec=400ms
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=timers.target
+
