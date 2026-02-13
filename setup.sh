@@ -31,14 +31,10 @@ done
 
 echo "[*] Aplying configurations..."
 
-chmod +x /opt/wrappers/useradd
 chmod +x /usr/local/libexec/monitoring.sh
 chmod +x /usr/local/libexec/monitoring_broadcast.sh
 
 ufw --force enable
-ufw allow 80/tcp comment 'WordPress (http)'
-ufw allow 443/tcp comment 'WordPress (https)'
-ufw allow 3000/tcp comment 'Gitea'
 ufw allow 4242/tcp comment 'SSH'
 ufw status
 
