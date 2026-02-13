@@ -15,8 +15,8 @@ apt update
 apt install -y ufw libpam-pwquality sudo
 
 groupadd user42
-usermod -aG user42 lbuscaro
-usermod -aG sudo lbuscaro
+usermod -aG user42 $1
+usermod -aG sudo $1
 
 echo "[*] Copying files..."
 find etc usr var -type f -o -type d -empty | while read path; do
@@ -41,7 +41,7 @@ ufw status
 systemctl daemon-reload
 systemctl enable monitoring_broadcast.timer
 
-chage -M 30 -m 2 -W 7 lbuscaro
+chage -M 30 -m 2 -W 7 $1
 
 echo "[*] Cleaning temp..."
 rm -rf "$TMP_DIR"
